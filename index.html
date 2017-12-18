@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aim Rivera | Web Design & Developer</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+   <style>
+   html{height:100%;}
+   .topcolor{
+    background-color:#8c8c8c;
+    width:100%;
+    height:1.5em;
+    position:absolute;
+    top:0;
+    left:0;
+   }
+   }
+   h4{
+   color:#b6b6b6;
+   }
+   .h4small{
+   font-family: Lato, sans-serif;
+   position:absolute;
+   top:3.2em;
+   left:6.7em;
+   color: #fff;
+   letter-spacing:0;
+   }
+   .navbar-left{
+   letter-spacing:5.8;
+   color:#fff;
+   font-family: Lato, sans-serif;
+   }
+    .navbar {
+      margin-bottom: 0;
+      background-color: transparent;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      transition: all 0.25s ease;
+  }
+   .navbar.past-main {
+    background-color:#fff;
+}
+ .h4small-pastMain{
+  color: #303030;
+  }
+  .navbar-default .navbar-toggle .icon-bar { 
+  background-color: white;
+   }
+   .navbar-default .navbar-toggle .icon-bar-pastmain { 
+  background-color: #303030;
+   }
+    .navbar-default .navbar-toggle {
+    margin-top:15px;
+    }
+  .navbar li a, .navbar .navbar-brand {
+      color: #999999 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #91bf2c !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  .jumbotron {
+        background-image: url(assets/images/homePage.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+      color: #fff;
+      padding:100px 25px;
+  }
+  .jumbotron p a{
+  text-decoration:underline;
+  }
+  .jumbotron a:visited{
+  text-decoration:none;
+  color:#fff;
+}
+.jumbotron a:hover{
+  text-decoration:none;
+  color:#abd115;
+}
+.jumbotron a:active{
+  text-decoration:none;
+  color:#fff;
+}
+   .container-fluid {
+      padding: 60px 50px;
+      background-color:#fff;
+  }
+  .logo {
+      font-size: 200px;
+  }
+  .bg-grey{
+    background-color:#f6f6f6;
+  }
+  .modal{
+  margin-top:5em;
+  }
+  #contact{
+  margin-top:-7em;
+  }
+  .img-circle{
+  border:1px solid #fff;
+  }
+  .contactNo{
+  padding:10px 10px;
+  }
+  .fa{
+  font-size:27px;
+  color:#91bf2c;
+  }
+  .fa-facebook, .fa-google, .glyphicon-envelope{
+  font-size:20px;
+  color:#91bf2c;
+  }
+  .form-control{
+  background-color:#f2f2f2;
+  }
+  .btn-default{
+  background-color: #fff;
+  border: 2px solid #91BF2C;
+  color:#91bf2c;
+  padding:6px 18px;
+  }
+  .footer{
+  margin:0 35px 0 55px;
+  color:#999999;
+  }
+  .glyphicon-chevron-up, .footerColor{
+  color:#999999;
+  }
+  #projectCaption{
+  color:#b6b6b6;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"><div class="topColor"></div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+</button>
+     <h4 id="navLogo"><a class="navbar-left" href="#myPage"><img src="assets/images/aimLogoV2.png" class="" width="57" height="37" alt="Aim Rivera" style="margin-top:.5em;margin-left:1.4em;"> ALWIN RIVERA <br><small class="h4small">WEB DESIGNER &amp; DEVELOPER</small></a></h4>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center" id="home">
+<h1>Front-end Web<br>Developer.</h1> 
+<p>Based in Cebu, PHL. Specializing in custom front-end web development. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <a href="#contact">here.</a></p> 
+<a data-toggle="modal" data-target="#myModal" class="btn btn-success" role="button">I need a website <span class="glyphicon glyphicon-chevron-right"></span></a>
+<a href="#contact" class="btn btn-success" role="button">I'm looking to hire <span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!--********PROJECTS SECTION*******-->
+<div class="container-fluid" id="projects">
+<div class="row">
+    <div class="col-sm-4">
+    <img src="assets/images/projects.jpg" width="240px" height="150px" alt="Jo Anne Rivera Dental Clinic" class="projectPic">
+      </div>
+     <div class="col-sm-8">
+  <h2>Dr. Jo Anne Rivera<br>Dental Clinic</h2>
+  <h4 id="Projectcaption"><strong>Best</strong> Dental Clinic in Cebu, PHL</h4>
+     </div>
+    <h3><span class="label label-success">Responsive Design</span>
+      <span class="label label-success">Bootstrap</span>
+  </h3>
+     </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+     <img src="assets/images/projects.jpg" width="240px" height="150px" alt="Jims Enterprises" class="projectPic">
+      </div>
+     <div class="col-sm-8">
+  <h2>Jims Enterprises</h2>
+  <h4 id="Projectcaption"><strong>Biggest</strong> supplier of bugatti valvosanitaria in Cebu, PHL</h4>
+     </div>
+     <h3><span class="label label-success">Responsive Design</span>
+      <span class="label label-success">Bootstrap</span>
+  </h3>
+     </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+     <img src="assets/images/projects.jpg" width="240px" height="150px" alt="Mia Lim Designs" class="projectPic">
+      </div>
+     <div class="col-sm-8">
+  <h2>Mia Lim Designs</h2>
+  <h4 id="Projectcaption"><strong>Most skillful</strong> Designer in Cebu, PHL</h4>
+     </div>
+     <h3><span class="label label-success">Responsive Design</span>
+      <span class="label label-success">Bootstrap</span>
+  </h3>
+     </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+     <img src="assets/images/projects.jpg" width="240px" height="150px" alt="Acely Farms" class="projectPic">
+      </div>
+     <div class="col-sm-8">
+  <h2>Acely Farms</h2>
+  <h4 id="Projectcaption"><strong>Largest</strong> poultry farm in Cebu, PHL</h4>
+     </div>
+     <h3><span class="label label-success">Responsive Design</span>
+      <span class="label label-success">Bootstrap</span>
+  </h3>
+     </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+     <img src="assets/images/projects.jpg" width="240px" height="150px" alt="Ngohiong Dynasty" class="projectPic">
+      </div>
+     <div class="col-sm-8">
+  <h2>Ngohiong Dynasty</h2>
+  <h4 id="Projectcaption"><strong>Most</strong> talented chef in Cebu, PHL</h4>
+     </div>
+     <h3><span class="label label-success">Responsive Design</span>
+      <span class="label label-success">Bootstrap</span>
+  </h3>
+     </div>
+</div>
+<div id="map" style="width: 100%; height:300px;"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 10.3229367, lng: 123.9170274};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+          });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOoP0e4yZ1mGLafCcMJcYOxwXm3jBx-Ms&callback=initMap">
+    </script>
+
+<!--******* CONTACT SECTION *******-->
+<div class="container-fluid" id="contact">
+  <div class="row">
+    <div class="col-sm-5 text-center">
+     <img src="assets/images/me.png" width="120" height="120" alt="contact image" class="img-circle" style="pointer-events: none;"><br><br>
+<h4><a href="tel:+63-925-740-0341"><span class="label label-success contactNo">+63&#160;(925)&#160;740-0341</span></a>
+  </h4><br>
+      <i class="fa fa-google"></i>&nbsp;&nbsp;
+      <i class="fa fa-facebook"></i>&nbsp;&nbsp;
+      <i class="fa fa-github"></i>&nbsp;&nbsp;
+      <span class="glyphicon glyphicon-envelope"></span> 
+    </div><br>
+    <div class="col-sm-7">
+      <div class="row">
+     <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit"><b>SEND</b></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center bg-grey">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p class="footerColor">
+  &#169;AIM.ME 2017<a href="https://github.com/aimovation" target="_blank" class="footer">GITHUB</a>
+  </p>
+  </footer>
+</footer>
+<!--MODAL SECTION-->
+<!--Modal-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+   <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">WEBSITE INQUIRY</h4>
+        </div>
+        <div class="modal-body">
+         <div class="row">
+     <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit"><b>SEND</b></button>
+        </div>
+      </div>
+    </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><b>CLOSE</b></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!--SMOOTH SCROLL SCRIPT-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, a[href='#contact'], footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== ""){
+      // Prevent default anchor click behavior
+      event.preventDefault();
+     // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<script>
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('.jumbotron').offset().top + $('.jumbotron').height();
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mainbottom) {
+        $('.navbar').addClass('past-main');
+         $('.navbar-left').addClass('h4small-pastmain');
+          $('.h4small').addClass('h4small-pastmain');
+      $('.icon-bar').addClass('icon-bar-pastmain');  
+    } else {
+        $('.navbar').removeClass('past-main');
+$('.navbar-left').removeClass('h4small-pastmain');
+$('.h4small').removeClass('h4small-pastmain');
+  $('.icon-bar').removeClass('icon-bar-pastmain'); 
+   }
+
+});
+</script>
+</body>
+</html>
