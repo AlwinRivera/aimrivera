@@ -11,13 +11,14 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
    <style>
-     @media only screen and (min-device-width: 480px){
+     @media only screen and (min-device-width: 180px){
    html{height:100%;
    }
    body{
            background-image: url(assets/images/homePage.jpg);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
+  background-position:left top;
+  background-size: 100% 551px;
    }
    .topcolor{
     background-color:#8c8c8c;
@@ -168,12 +169,22 @@
   }
   .jumbotron { margin-top: 0; }
      }
-  @media screen and (min-width : 600px) {
+    @media screen and (min-width : 500px) {
+         .h4small{
+   position:absolute;
+ top:3.2em;
+   left:6.8em;
+   }
+  @media screen and (min-width : 768px) {
          .h4small{
    position:absolute;
  top:3.2em;
    left:10.6em;
    }
+   .imgLogo{
+  width:71px;
+  height:38px;
+}
      }
   @media screen and (min-width: 1025px){
     .h4small{
@@ -228,6 +239,8 @@
 .imgLogo{
 margin-top: .9em;
   margin-bottom: 15px;
+  width:71px;
+  height:38px;
 }
 #contact .col-sm-5{    
   margin-right: -65px;
@@ -256,7 +269,7 @@ margin-top: .9em;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
 </button>
-     <h4 id="navLogo"><a class="navbar-left" href="#myPage"><img src="assets/images/aimLogoV2.png" class="imgLogo" width="71" height="38" alt="Aim Rivera" style=""> ALWIN RIVERA <br><small class="h4small">WEB DESIGNER &amp; DEVELOPER</small></a></h4>
+     <h4 id="navLogo"><a class="navbar-left" href="#myPage"><img src="assets/images/aimLogoV2.png" class="imgLogo" width="57" height="37" alt="Aim Rivera" style=""> ALWIN RIVERA <br><small class="h4small">WEB DESIGNER &amp; DEVELOPER</small></a></h4>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
