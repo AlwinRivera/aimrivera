@@ -430,7 +430,7 @@ $(document).ready(function(){
    <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">WEBSITE INQUIRY</h4>
+          <h4 class="modal-title">Website Overview<br>Project Contact Information:</h4>
         </div>
         <div class="modal-body">
          <div class="row">
@@ -440,10 +440,18 @@ $(document).ready(function(){
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" value="" required>
         </div>
         <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" value="" required>
+        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" value="" required>
         </div>
       </div>
-       <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br>
+       <div class="row">
+       <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" value="" required>
+        </div>
+        <div class="col-sm-6 form-group">
+            <input class="form-control" id="businessName" name="businessName" placeholder="Name of your business" type="text" value="" required>
+        </div>
+        </div>
+        <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
            <button class="btn btn-default pull-right" type="submit"><b>SEND</b></button>
